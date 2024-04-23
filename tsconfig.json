@@ -15,7 +15,7 @@
     "paths": {
       "@/*": ["./*"]
     },
-    target: "ES2017"
+    "target": "ES2017" // Enclosed in double quotes
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
