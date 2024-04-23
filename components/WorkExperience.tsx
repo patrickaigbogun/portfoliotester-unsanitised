@@ -1,3 +1,4 @@
+//workexperience.tsx
 import React from 'react'
 import { motion } from 'framer-motion';
 import ExperienceCard from './ExperienceCard';
@@ -22,12 +23,13 @@ function Experience({ }: Props) {
 				Experience
 			</h3>
 
-			<div className='w-full space-x-5 overflow-x-scroll scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 p-10 snap-x smap-mandatory'>
+			<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-10'>
 				<ExperienceCard />
 				<ExperienceCard />
 				<ExperienceCard />
 				<ExperienceCard />
 			</div>
+
 
 		</motion.div>
 	);
