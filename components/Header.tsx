@@ -1,3 +1,4 @@
+//header.tsx
 import React from "react";
 import { SocialIcon } from 'react-social-icons';
 import { motion } from "framer-motion";
@@ -6,8 +7,8 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-200 xl:items-center">
-      <motion.div 
+    <header className="sticky top-0 p-5 flex items-center justify-between max-w-7xl mx-auto z-200">      
+    <motion.div 
       initial={{
         x:-500,
         opacity:0,
@@ -21,7 +22,7 @@ export default function Header({}: Props) {
       transition={{
         duration:1.2
       }}
-      className="flex flex-row items-center" >
+      className="flex flex-row space-x-4 md:space-x-8">
         {/* Social Icons */}
         <SocialIcon 
         url="https://github.com/Youngboypimpin" 
@@ -65,9 +66,7 @@ export default function Header({}: Props) {
         bgColor="transparent"
         
         />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-         Get in Touch   
-        </p>
+        <p className="uppercase text-sm text-gray-400">Get in Touch</p>
       </motion.div>
     </header>
   );
